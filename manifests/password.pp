@@ -66,6 +66,6 @@ class grub::password($md5_password) {
         }
 # Mac OS X doesn't have grub.        
         'Darwin': {}
-        default: { unimplemented() }
+        default: { fail "unimplemented on ${::osfamily}" }
     }
 }
