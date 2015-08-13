@@ -32,7 +32,7 @@ class grub::stig {
 # by root, group-owned by root, has permissions \verb!0600!, and has no
 # extended ACL.
     file { $g:
-        owner => root, group => 0, mode => 0600,
+        owner => root, group => 0, mode => '0600',
     }
     no_ext_acl { $g: }
 }
